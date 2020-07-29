@@ -1,0 +1,56 @@
+
+
+.social {
+
+    @include centeredFlex();
+    padding: 0px;
+
+   & .list:not(:last-child) {
+        margin-right: 10px;
+    }
+
+
+    &-link {
+   
+        @include centeredFlex($display: inline-flex);
+       padding: 0;
+       border-radius: 50%;
+       width: 44px;
+       height: 44px;
+       text-decoration: none;
+       border: none;
+       background: rgba(255, 255, 255, 0.1);
+    
+       @include transition($animation-name: fill);
+       @include transition($animation-name: background-color);
+
+    //    @include transition($animation-name: fill, $animation-name: background-color);
+    //    transition: fill $animation-duration $animation-timing-function,
+    //    background-color $animation-duration $animation-timing-function;
+    
+        
+            &:hover,
+            &:focus   {
+                background-color: $accent-color;
+            } 
+    
+        }
+
+        &-icon {
+        width: 20px;
+        height: 20px;
+        fill: $additional-link-color;
+    
+        .social-link:hover &,
+        .social-link:focus & {
+        fill: $title-text-color;
+    } 
+    
+    }
+
+}
+
+
+
+
+

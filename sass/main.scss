@@ -1,0 +1,46 @@
+// Base
+
+
+@import './base/normalize';
+
+// utils
+
+@import './utils/variables';
+@import './utils/placeholders';
+@import './utils/is-hidden';
+@import './utils/mixins';
+
+// Components
+
+@import "./components/common/general";
+
+@import "./components/common/header";
+@import './components/common/logo';
+@import './components/main/hero';
+@import './components/common/button';
+@import './components/common/sectionStyles';
+@import './components/main/features';
+@import './components/main/products';
+@import './components/main//team';
+@import './components/common/socialicons';
+@import './components/main/clients';
+@import './components/common/footer';
+
+
+@import './components/main/backdrop';
+
+
+
+
+
+
+
+
+
+
+
+
+// .features {
+//     @extend %list;
+// }
+

@@ -1,0 +1,14 @@
+
+
+
+.portfolio .container {
+
+    @extend %paddings94;
+
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+    color: $primary-text-color;
+
+    font-size: 16px;
+   
+}

@@ -1,0 +1,141 @@
+.footer {
+    background-color: #2F303A;
+    width: 100%;
+
+    &-content {
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-bottom: 29px;
+    } 
+
+
+    &-list {
+        padding-top: 51px;
+        list-style: none;
+
+        &-list:not(:last-child) {
+            margin-right: 94px;
+        }
+
+        & .button-primary {
+            display: inline-flex;
+            align-items: center;
+         }
+         & .button-primary:hover .icon-send   {
+            fill: $accent-color;
+        }
+    }
+
+    &-subtitle {
+        display: block;
+        margin-bottom: 20px;
+    
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $title-text-color;
+    }
+
+    & .social {
+        margin: 0px;
+    }
+    & .social-icon {
+        fill: $title-text-color;
+    }
+
+    
+    &-subscription {
+        display: flex;
+    }
+    &-label {
+        
+        margin-right: 12px;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+        
+    }
+    &-input {
+        /* color: #ffffff; */
+        padding: 18px 95px 18px 16px;
+        // @include bordered(rgba(255, 255, 255, 0.3));
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        background-color: #2F303A;
+        color: #F5F4FA;
+
+    }
+
+
+    &-copyright {
+        display: block;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 16px;
+        padding-bottom: 19px;
+
+        font-size: 12px;
+        line-height: 2;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.4);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+ }
+
+
+.footer-content .footer-info {
+    padding-top: 39px;
+
+    & .logo-studio {
+        color: $title-text-color;
+    }
+}
+
+
+
+
+
+.address-list {
+    display: inline-block;
+    margin-top: 8px;
+    margin-right: 69px; 
+    padding: 0;
+
+    font-style: normal;
+    color: $title-text-color;
+    
+    &:not(:last-child) {
+        margin-right: 94px;
+    }
+}
+.address-link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+.address-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+
+
+
+.icon-send {
+   
+    fill: $primary-background-color;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+
+    @include transition($animation-name:fill);
+
+//  transition: fill $animation-duration $animation-timing-function;
+
+    // @include transition(fill);
+}
+
+
+

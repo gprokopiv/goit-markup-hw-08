@@ -1,0 +1,46 @@
+
+.clients {
+    @extend %container;
+    @extend %paddings94;
+
+
+    &-list {
+        @include centeredFlex();
+
+        box-sizing: border-box;
+        border: 1px solid $additional-link-color;
+        border-radius: 4px;
+        width: 170px;
+        height: 90px;
+        
+        @include transition($animation-name: fill);
+        @include transition($animation-name: border-color);
+
+        // transition: fill $animation-duration $animation-timing-function,
+        // border-color $animation-duration $animation-timing-function;
+       
+            &:hover,
+            &:focus {
+            border-color:$accent-color;
+        }
+    
+    }
+    
+    
+    
+    &-icon {
+        fill: $additional-link-color;
+         width: 100%;
+    
+         .clients-list:hover &,
+         .clients-list:focus & {
+             fill: $accent-color;
+         }
+    
+    }
+    
+    
+    
+
+}
+

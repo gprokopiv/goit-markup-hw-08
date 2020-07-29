@@ -1,0 +1,29 @@
+.features {
+    & .container {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    // @extend %container;
+    // @extend %paddings94;
+
+
+    &-label {
+        padding: 25px 100px;
+        margin-bottom: 30px;
+     
+    
+         background-color: $secondary-background-color;
+         border-radius: 4px;
+    }   
+    &-icon {
+        width: 70px;
+        height: 70px;
+    }
+    &-descriptions {
+        margin: 10px 0 10px 0;
+        color: $secondary-text-color;
+    }
+
+}
+
+
