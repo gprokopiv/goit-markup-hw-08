@@ -690,6 +690,7 @@ img {
 
 .clients-icon {
   fill: #AFB1B8;
+  width: 100%;
 }
 
 .clients-list:hover .clients-icon,
