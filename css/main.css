@@ -698,6 +698,11 @@ img {
   fill: #2196F3;
 }
 
+.icon4 {
+  width: 80px;
+  height: 43px;
+}
+
 .footer {
   background-color: #2F303A;
   width: 100%;

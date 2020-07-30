@@ -11,8 +11,9 @@
         box-sizing: border-box;
         border: 1px solid $additional-link-color;
         border-radius: 4px;
-        width: 170px;
+       width: 170px;
         height: 90px;
+
         
         @include transition($animation-name: (fill, border-color));
        
@@ -28,6 +29,7 @@
     &-icon {
         fill: $additional-link-color;
          width: 100%;
+
     
          .clients-list:hover &,
          .clients-list:focus & {
@@ -40,4 +42,6 @@
     
 
 }
+
+
 
