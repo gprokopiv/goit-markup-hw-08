@@ -4,8 +4,9 @@
 
 
     &-item {
-        width: 370px; 
-        /* width: calc(100%-60px) / 3; 398*/
+        // width: 370px; 
+        width: calc((100% - 60px ) / 3);
+
         margin-right: 30px;
         margin-bottom: 30px;
         border-top-left-radius: 5px;
@@ -29,17 +30,22 @@
         
     &-link {
    text-decoration: none;
-
-        &:hover .works-overlay,
-        &:focus .works-overlay {
-        opacity: 1;
-        transform: translateY(0);} 
-
         &:hover,
         &:focus {
         box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px $shadow-black;
 
         }
+
+
+        &:hover .works-overlay,
+        &:focus .works-overlay {
+        opacity: 1;
+        transform: translateY(0);
+        box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px $shadow-black;
+
+    } 
+
+       
     } 
 
 
@@ -48,7 +54,7 @@
         max-width: 100%;
         height: auto; 
     }
-    & .list {
+    .list {
         display: block;
         }
 
@@ -129,6 +135,11 @@
 
 
 
+.works-link:hover,
+.works-link:focus {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+
+}
 
 
 
