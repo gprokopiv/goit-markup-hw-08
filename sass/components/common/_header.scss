@@ -6,7 +6,7 @@
     z-index: 2; 
     border-bottom: 1px solid #ECECEC; 
    
-    & .container {
+    .container {
         @include centeredFlex();
     
         font-weight: 500;
@@ -25,7 +25,7 @@
 
 .menu {
     &-item {
-        & + & {
+        & {
             margin-left: 50px;
         }
         &:first-child {
