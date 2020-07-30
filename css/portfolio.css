@@ -483,7 +483,6 @@ img {
   background-color: #2196F3;
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
 }
 
 .filters-label {
@@ -491,25 +490,27 @@ img {
   border-color: transparent;
   padding: 6px 22px;
   border-radius: 4px;
-  background: #F5F4FA;
-  font-size: 16px;
   color: #212121;
   background-color: #F5F4FA;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
-  cursor: pointer;
-  -webkit-animation-name: color;
-          animation-name: color;
+  -webkit-animation-name: color, background-color;
+          animation-name: color, background-color;
   -webkit-animation-duration: 250ms;
           animation-duration: 250ms;
   -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-animation-name: background-color;
-          animation-name: background-color;
-  animation-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filters-label:hover {
+  color: #ffffff;
+  background-color: #2196F3;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .works {
@@ -689,16 +690,6 @@ img {
   text-decoration: none;
   border: none;
   background: rgba(255, 255, 255, 0.1);
-  -webkit-animation-name: fill;
-          animation-name: fill;
-  -webkit-animation-duration: 250ms;
-          animation-duration: 250ms;
-  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-animation-name: background-color;
-          animation-name: background-color;
-  animation-duration: 250ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover, .social-link:focus {
@@ -725,13 +716,17 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-bottom: 29px;
+}
+
+.footer-content .footer-info {
+  padding-top: 39px;
 }
 
 .footer-list {
@@ -739,7 +734,7 @@ img {
   list-style: none;
 }
 
-.footer-list-list:not(:last-child) {
+.footer-list:not(:last-child) {
   margin-right: 94px;
 }
 
@@ -765,7 +760,7 @@ img {
 }
 
 .footer .social {
-  margin: 0px;
+  margin: 0;
 }
 
 .footer .social-icon {
@@ -787,7 +782,6 @@ img {
 }
 
 .footer-input {
-  /* color: #ffffff; */
   padding: 18px 95px 18px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -810,11 +804,7 @@ img {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.footer-content .footer-info {
-  padding-top: 39px;
-}
-
-.footer-content .footer-info .logo-studio {
+.footer-info .logo-studio {
   color: #ffffff;
 }
 

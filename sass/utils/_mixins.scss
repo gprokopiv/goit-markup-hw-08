@@ -8,11 +8,6 @@
 // @include centeredFlex();
 // @include centeredFlex($align-items: baseline);
 
-@mixin bordered($color) {
-    border: 1px solid $color;
-    border-top: 1px solid $color;
-    border-bottom: 1px solid $color;
-  }
 
 
  @mixin transition($animation-name: color, $animation-duration:  $animation-duration, $animation-timing-function: $animation-timing-function) {

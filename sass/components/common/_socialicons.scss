@@ -12,7 +12,7 @@
 
     &-link {
    
-        @include centeredFlex($display: inline-flex);
+      @include centeredFlex($display: inline-flex);
        padding: 0;
        border-radius: 50%;
        width: 44px;
@@ -21,8 +21,7 @@
        border: none;
        background: rgba(255, 255, 255, 0.1);
     
-       @include transition($animation-name: fill);
-       @include transition($animation-name: background-color);
+    //   @include transition(($animation-name:fill, background-color));
 
     //    @include transition($animation-name: fill, $animation-name: background-color);
     //    transition: fill $animation-duration $animation-timing-function,

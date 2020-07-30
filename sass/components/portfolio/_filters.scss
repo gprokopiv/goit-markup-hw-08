@@ -1,9 +1,9 @@
 .filters {
-
+    
     &-items {
         display: inline-block;
         margin: 0 4px;
-    
+        
     }
     
     
@@ -15,12 +15,11 @@
     
     &-radio {
         display: none;
-    
-        &:checked ~.filters-label {
+       
+        &:checked ~.filters-label{
             color: $title-text-color;
             background-color: $accent-color;
         box-shadow: 0px 2px 2px $shadow-black, 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
-            cursor: pointer;
         }
         
     }
@@ -31,23 +30,26 @@
         border-color: transparent;
         padding: 6px 22px;
         border-radius: 4px;
-        background: #F5F4FA;
-    
-        font-size: 16px;
-    
         color: $primary-text-color;
         background-color: $secondary-background-color;
-    
+
+        font-size: 16px;
         font-weight: 500;
         line-height: 1.6;
         text-align: center;
         letter-spacing: 0.03em;
-        cursor: pointer;
         
-        @include transition();
-        @include transition($animation-name:background-color);
+        &:hover {
+            color: $title-text-color;
+            background-color: $accent-color;
+            box-shadow: 0px 2px 2px $shadow-black, 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+         
+        } 
+       
+        @include transition($animation-name: (color, background-color));
         // transition: color $animation-duration $animation-timing-function,
         // background-color $animation-duration $animation-timing-function; 
     }
-     
+    
 } 
