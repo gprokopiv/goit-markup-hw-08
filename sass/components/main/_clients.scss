@@ -28,19 +28,38 @@
     &-icon {
 
         fill: $additional-link-color;
-         width: 100%;
+        //  width: 100%;
     
-         .clients-list:hover &,
-         .clients-list:focus & {
+        .clients-list:hover &,
+        .clients-list:focus & {
              fill: $accent-color;
          }
     
     }
     
-    
-    
+     
 
 }
 
 
+
+
+// .client3 {
+//     width: 41px;
+//     height: 42.62px;
+// }
+
+// .client4 {
+//     width: 79.66px;
+//     height: 42.02px;
+// }
+
+// .client5 {
+//     width: 59px;
+//     height: 47px;
+// }
+// .client6 {
+//     width: 88.48px;
+//     height: 45.44px;
+// }
 
