@@ -3,27 +3,29 @@
     width: 100%;
 
     &-content {
-        
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
+        @include centeredFlex();
+        // @include centeredFlex($align-items: baseline);
         padding-bottom: 29px;
+
+        .footer-info {
+            padding-top: 39px;
+            
+        }
     } 
 
 
     &-list {
         padding-top: 51px;
         list-style: none;
-
-        &-list:not(:last-child) {
+        
+        &:not(:last-child) {
             margin-right: 94px;
         }
-
-        & .button-primary {
+        .button-primary {
             display: inline-flex;
             align-items: center;
          }
-         & .button-primary:hover .icon-send   {
+        .button-primary:hover .icon-send   {
             fill: $accent-color;
         }
     }
@@ -37,10 +39,10 @@
         color: $title-text-color;
     }
 
-    & .social {
-        margin: 0px;
+    .social {
+        margin: 0;
     }
-    & .social-icon {
+    .social-icon {
         fill: $title-text-color;
     }
 
@@ -48,8 +50,8 @@
     &-subscription {
         display: flex;
     }
+
     &-label {
-        
         margin-right: 12px;
         font-size: 16px;
         line-height: 1.25;
@@ -58,14 +60,12 @@
         
     }
     &-input {
-        /* color: #ffffff; */
         padding: 18px 95px 18px 16px;
-        // @include bordered(rgba(255, 255, 255, 0.3));
         border: 1px solid rgba(255, 255, 255, 0.3);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         background-color: #2F303A;
-        color: #F5F4FA;
+        color: $secondary-background-color;
 
     }
 
@@ -83,19 +83,13 @@
         color: rgba(255, 255, 255, 0.4);
         border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
- }
-
-
-.footer-content .footer-info {
-    padding-top: 39px;
-
-    & .logo-studio {
-        color: $title-text-color;
-    }
 }
 
 
 
+.footer-info .logo-studio {
+    color: $title-text-color;
+}
 
 
 .address-list {
@@ -134,8 +128,4 @@
 
 //  transition: fill $animation-duration $animation-timing-function;
 
-    // @include transition(fill);
 }
-
-
-
