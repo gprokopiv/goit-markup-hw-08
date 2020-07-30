@@ -669,6 +669,12 @@ img {
   text-decoration: none;
   border: none;
   background: rgba(255, 255, 255, 0.1);
+  -webkit-animation-name: fill, background-color;
+          animation-name: fill, background-color;
+  -webkit-animation-duration: 250ms;
+          animation-duration: 250ms;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover, .social-link:focus {

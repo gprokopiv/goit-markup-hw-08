@@ -1,8 +1,9 @@
 .products {
-    @extend %container;
+    .container {
     padding-bottom: 94px;
+    }
 
-    & .section-subtitle {
+    .section-subtitle {
         position: absolute;
         left: 0;
         bottom: 0;
@@ -23,12 +24,3 @@
 }
 
 
-
-// .products img, 
-// .team img {
-//     display: block;
-//     margin: 0;
-//     max-width: 100%;
-//     height: auto; 
-
-// }

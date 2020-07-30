@@ -3,19 +3,15 @@
     text-decoration: none;
     
     color: #000000;
-
     font-family: $font-logo;
     @include fontStyle($weight: 700, $size: 26px, $height: 1.2);
-
-   
-
     
+    .logo-web {
+    color: $accent-color;
+   } 
 }
 
 
-.logo .logo-web {
-    color: $accent-color;
-   } 
 .logo-studio:hover,
 .logo-studio:focus {
     color: #000000;}

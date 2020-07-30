@@ -1,7 +1,8 @@
 
 .clients {
-    @extend %container;
-    @extend %paddings94;
+    .container {
+        @extend %paddings94;
+    }    
 
 
     &-list {
@@ -13,11 +14,7 @@
         width: 170px;
         height: 90px;
         
-        @include transition($animation-name: fill);
-        @include transition($animation-name: border-color);
-
-        // transition: fill $animation-duration $animation-timing-function,
-        // border-color $animation-duration $animation-timing-function;
+        @include transition($animation-name: (fill, border-color));
        
             &:hover,
             &:focus {

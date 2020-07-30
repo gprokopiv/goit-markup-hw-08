@@ -5,7 +5,7 @@
     @include centeredFlex();
     padding: 0px;
 
-   & .list:not(:last-child) {
+   .list:not(:last-child) {
         margin-right: 10px;
     }
 
@@ -20,13 +20,10 @@
        text-decoration: none;
        border: none;
        background: rgba(255, 255, 255, 0.1);
-    
-    //   @include transition(($animation-name:fill, background-color));
 
-    //    @include transition($animation-name: fill, $animation-name: background-color);
-    //    transition: fill $animation-duration $animation-timing-function,
-    //    background-color $animation-duration $animation-timing-function;
-    
+       @include transition($animation-name: (fill, background-color));
+
+
         
             &:hover,
             &:focus   {
@@ -43,7 +40,7 @@
         .social-link:hover &,
         .social-link:focus & {
         fill: $title-text-color;
-    } 
+        } 
     
     }
 
