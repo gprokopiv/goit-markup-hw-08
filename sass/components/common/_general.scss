@@ -10,36 +10,27 @@
     /* outline: solid tomato;      */
     margin: 0 auto;
     padding: 0 15px;
-    // width: 1200px;
     
-    
+     @media screen and (min-width: $mobile) {
+            
+             width: $mobile;
+             background-color: #388e3c;
+        }
+     
+     @media screen and (min-width: $tablet) {
+       
+            width: $tablet;
+             background-color: blue;      }
+          
+    @media screen and (min-width: $desktop) {
+           width: $desktop;
+             background-color: red;    
+      }
     
 }
 
 
-@media screen and (min-width: 480px) {
-    .container {
-        max-width: 480x;
 
-      background-color: #388e3c;
-    }
-  }
- 
-  @media screen and (min-width: 768px) {
-    .container {
-        max-width: 768x;
-
-      background-color: blue;
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    .container {
-        max-width: 1200x;
-
-      background-color: red;
-    }
-  }
   
 .list {
     list-style: none;

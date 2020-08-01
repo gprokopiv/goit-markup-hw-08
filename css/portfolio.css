@@ -281,21 +281,21 @@ summary {
 
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480x;
+    width: 480px;
     background-color: #388e3c;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768x;
+    width: 768px;
     background-color: blue;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200x;
+    width: 1200px;
     background-color: red;
   }
 }
