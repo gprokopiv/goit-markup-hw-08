@@ -25,15 +25,15 @@
 
 .menu {
     &-item {
-       + & {
+       & {
             margin-left: 50px;
         }
-        &:first-child {
-            margin-right: 85px;
+        // &:first-child {
+        //     margin-right: 85px;
             
-            padding-top: 24px;
-            padding-bottom: 25px; 
-        }
+        //     padding-top: 24px;
+        //     padding-bottom: 25px; 
+        // }
     }
     
     &-link {

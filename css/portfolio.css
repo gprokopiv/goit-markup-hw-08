@@ -335,14 +335,8 @@ img {
   margin-left: auto;
 }
 
-+ .menu-item {
+.menu-item {
   margin-left: 50px;
-}
-
-.menu-item:first-child {
-  margin-right: 85px;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .menu-link {
