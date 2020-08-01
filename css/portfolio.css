@@ -378,6 +378,16 @@ img {
   color: #2196F3;
 }
 
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
 /* blue underline */
 .menu-link::after,
 .active::after {
