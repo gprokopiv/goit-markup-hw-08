@@ -4,6 +4,7 @@
 @import './base/normalize';
 
 // utils
+@import './utils/breakpoints';
 
 @import './utils/variables';
 @import './utils/placeholders';
@@ -12,22 +13,22 @@
 
 // Components
 
-@import "./components/common/general";
+ @import "./components/common/general";
 
-@import "./components/common/header";
-@import './components/common/logo';
-@import './components/main/hero';
-@import './components/common/button';
-@import './components/common/sectionStyles';
-@import './components/main/features';
-@import './components/main/products';
-@import './components/main/team';
-@import './components/common/socialicons';
-@import './components/main/clients';
-@import './components/common/footer';
+// @import "./components/common/header";
+// @import './components/common/logo';
+// @import './components/main/hero';
+// @import './components/common/button';
+// @import './components/common/sectionStyles';
+// @import './components/main/features';
+// @import './components/main/products';
+// @import './components/main/team';
+ @import './components/common/socialicons';
+// @import './components/main/clients';
+// @import './components/common/footer';
 
 
-@import './components/main/modal';
+// @import './components/main/modal';
 
 @import './mobile/index';
 @import './tablet/index';

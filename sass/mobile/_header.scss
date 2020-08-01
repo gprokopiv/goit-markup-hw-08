@@ -1,0 +1,21 @@
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: $primary-background-color;
+    top: 0;
+    z-index: 2; 
+    border-bottom: 1px solid #ECECEC; 
+   
+    .container {
+    
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        
+    } 
+} 
+
+
+  
+
+
