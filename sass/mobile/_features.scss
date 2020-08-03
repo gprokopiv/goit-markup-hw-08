@@ -1,0 +1,22 @@
+.features {
+    
+    &-label {
+        padding: 25px 190px;
+        margin-bottom: 30px;
+     
+    
+         background-color: $secondary-background-color;
+         border-radius: 4px;
+    }   
+    &-icon {
+        width: 70px;
+        height: 70px;
+    }
+    &-descriptions {
+        margin: 10px 0 10px 0;
+        color: $secondary-text-color;
+    }
+
+}
+
+

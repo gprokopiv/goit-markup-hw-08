@@ -1,0 +1,71 @@
+
+.clients {
+    
+.container {
+    margin: -15px;
+    
+}
+
+    &-list {
+        @include centeredFlex();
+
+        box-sizing: border-box;
+        border: 1px solid $additional-link-color;
+        border-radius: 4px;
+       width: 210px;
+        height: 90px;
+
+        
+        @include transition($animation-name: (fill, border-color));
+       
+            &:hover,
+            &:focus {
+            border-color:$accent-color;
+        }
+    
+    }
+    
+    
+    
+    &-icon {
+
+        fill: $additional-link-color;
+        width: 100%;
+       
+        .clients-list:hover &,
+        .clients-list:focus & {
+             fill: $accent-color;
+             
+         }
+    
+    }
+    .section-item {
+width: calc((100% - 4 * 15px) / 2);
+margin: 15px;
+}
+}    
+
+
+
+
+
+
+// .client3 {
+//     width: 41px;
+//     height: 42.62px;
+// }
+
+// .client4 {
+//     width: 79.66px;
+//     height: 42.02px;
+// }
+
+// .client5 {
+//     width: 59px;
+//     height: 47px;
+// }
+// .client6 {
+//     width: 88.48px;
+//     height: 45.44px;
+// }
+

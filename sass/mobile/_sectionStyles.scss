@@ -1,0 +1,35 @@
+
+.section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    
+        &-title {
+        margin-top: 0px;
+        margin-bottom: 30px;
+        text-align: center;
+        @include fontStyle($weight: 700, $size: 28px, $height: 1.17);
+      
+       }
+
+    &-subtitle {
+        margin: 0;
+        padding: 0;
+
+        @include fontStyle($weight: 700, $size: 14px, $height: 1.14);
+        text-align: center;
+        text-transform: uppercase;
+    
+    }
+    
+    // &-list {
+    //     display: flex;
+    // }
+    
+    &-item:not(:last-child) {
+       margin-bottom: 30px;
+    }
+
+
+}
+
+
